@@ -1,0 +1,4 @@
+# Add project dependencies here, e.g.:
+# flask==2.3.2
+dbt-core==1.9.4
+dbt-snowflake==1.9.4
