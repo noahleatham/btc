@@ -30,3 +30,48 @@ Happy modeling!
 [0m14:32:29.587529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079f1df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f5ae40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b9e240>]}
 [0m14:32:29.587775 [debug] [MainThread]: Flushing usage events
 [0m14:32:30.029116 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:21:36.113121 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 09:21:36.131837 | 39812b78-8325-4636-bcfb-20a43adfa7f2 ==============================
+[0m09:21:36.131837 [info ] [MainThread]: Running with dbt=1.9.4
+[0m09:21:36.132517 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/noah/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:21:36.132930 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/noah/Documents/btc/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:21:36.135272 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.04826004, "process_in_blocks": "0", "process_kernel_time": 0.211665, "process_mem_max_rss": "103923712", "process_out_blocks": "0", "process_user_time": 0.949175}
+[0m09:21:36.135608 [debug] [MainThread]: Command `dbt run` failed at 09:21:36.135556 after 0.05 seconds
+[0m09:21:36.135827 [debug] [MainThread]: Flushing usage events
+[0m09:24:30.850716 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 09:24:30.868566 | 6e5869b4-8fb5-4418-8e1e-089bf4f7f6b7 ==============================
+[0m09:24:30.868566 [info ] [MainThread]: Running with dbt=1.11.2
+[0m09:24:30.869221 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'write_json': 'True', 'use_colors': 'True', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'debug': 'False', 'printer_width': '80', 'static_parser': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'cache_selected_only': 'False', 'invocation_command': 'dbt init test_project', 'log_format': 'default', 'profiles_dir': '/Users/noah/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'log_path': 'logs', 'indirect_selection': 'eager', 'warn_error': 'None', 'log_cache_events': 'False', 'quiet': 'False', 'no_print': 'None'}
+[0m09:24:30.877832 [debug] [MainThread]: Starter project path: /Users/noah/Documents/btc/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m09:24:30.886361 [info ] [MainThread]: 
+Your new dbt project "test_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:24:30.886802 [info ] [MainThread]: Setting up your profile.
+[0m09:24:38.677302 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m09:24:38.677663 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m09:24:38.677838 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m09:26:52.229908 [info ] [MainThread]: Profile test_project written to /Users/noah/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m09:26:52.232770 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 141.41167, "process_in_blocks": "0", "process_kernel_time": 0.176549, "process_mem_max_rss": "131022848", "process_out_blocks": "0", "process_user_time": 0.927218}
+[0m09:26:52.233865 [debug] [MainThread]: Command `dbt init` succeeded at 09:26:52.233743 after 141.41 seconds
+[0m09:26:52.234170 [debug] [MainThread]: Flushing usage events

@@ -1,0 +1,46 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Raw data source
+    database: btc
+    schema: btc_schema
+    tables:
+      - name: btc
+        config:
+          freshness:
+            warn_after: {count: 24, period: hour}
+            # error_after: {count: 48, period: hour}
+          loaded_at_field: block_timestamp
+        description: Bitcoin data table
+        columns:
+          - name: hash_key
+            description: Unique identifier
+            data_type: varchar
+          - name: block_hash
+            description: Hash of the block
+            data_type: varchar
+          - name: block_number
+            description: Block number
+            data_type: number
+          - name: block_timestamp
+            description: Block timestamp
+            data_type: timestamp_ntz
+          - name: fee
+            description: Transaction fee
+            data_type: float
+          - name: input_value
+            description: Input value
+            data_type: float
+          - name: output_value
+            description: Output value
+            data_type: float
+          - name: fee_per_byte
+            description: Fee per byte
+            data_type: float
+          - name: is_coinbase
+            description: Whether transaction is coinbase
+            data_type: boolean
+          - name: outputs
+            description: Transaction outputs
+            data_type: variant
