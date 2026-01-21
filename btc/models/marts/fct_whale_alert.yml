@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: whale_alert
+  - name: fct_whale_alert
     description: Model identifying whale addresses with large transaction outputs and USD valuations
     columns:
       - name: output_address

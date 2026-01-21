@@ -9,6 +9,7 @@ models:
         data_type: timestamp
         tests:
           - not_null
+          - unique
       - name: price
         description: Bitcoin price in USD
         data_type: float
