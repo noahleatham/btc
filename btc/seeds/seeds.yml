@@ -1,0 +1,25 @@
+version: 2
+
+seeds:
+  - name: btc_usd_max
+    description: Historical Bitcoin to USD price data with market metrics
+    config:
+      alias: btc_usd_max
+      column_types:
+        snapped_at: varchar
+        price: float
+        market_cap: float
+        total_volume: float
+    columns:
+      - name: snapped_at
+        description: Timestamp when the data was captured (loaded as varchar, needs casting in downstream models)
+        data_type: varchar
+      - name: price
+        description: Bitcoin price in USD
+        data_type: float
+      - name: market_cap
+        description: Market capitalization in USD
+        data_type: float
+      - name: total_volume
+        description: Total trading volume in USD
+        data_type: float

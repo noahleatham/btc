@@ -1,3 +1,13 @@
 {
-    "dbt.enableNewLineagePanel": true
+    "dbt.enableNewLineagePanel": true,
+    "files.exclude": {
+        "**/dbt_internal_packages/**": true,
+        "**/dbt_packages/**": true,
+        "**/target/**": true
+    },
+    "search.exclude": {
+        "**/dbt_internal_packages/**": true,
+        "**/dbt_packages/**": true,
+        "**/target/**": true
+    }
 }

@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: whale_alert
+    description: Model identifying whale addresses with large transaction outputs and USD valuations
+    columns:
+      - name: output_address
+        description: Bitcoin address receiving the output
+        tests:
+          - not_null
+          - unique
+      - name: total_output_value
+        description: Sum of all output values for this address in BTC
+        tests:
+          - not_null
+      - name: transaction_count
+        description: Number of transactions to this address with outputs > 10 BTC
+        tests:
+          - not_null
+      - name: price
+        description: Current Bitcoin price in USD
+        tests:
+          - not_null
+      - name: total_value_usd
+        description: Total output value in USD (total_output_value * price)
+        tests:
+          - not_null
