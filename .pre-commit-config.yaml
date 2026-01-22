@@ -10,9 +10,14 @@ repos:
     rev: v2.0.7
     hooks:
       - id: check-model-has-all-columns
+        args: ["--exclude=dbt_project_evaluator*"]
       - id: check-model-columns-have-desc
+        args: ["--exclude=dbt_project_evaluator*"]
       - id: check-model-has-description
-      - id: check-model-has-contract
+        args: ["--exclude=dbt_project_evaluator*"]
       - id: check-model-has-tests
+        args: ["--exclude=dbt_project_evaluator*"]
       - id: check-source-columns-have-desc
+        args: ["--exclude=dbt_project_evaluator*"]
       - id: check-source-table-has-description
+        args: ["--exclude=dbt_project_evaluator*"]

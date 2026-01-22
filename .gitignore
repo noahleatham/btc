@@ -3,3 +3,10 @@ __pycache__/
 *.py[cod]
 .DS_Store
 *.csv
+
+# dbt project ignores (from btc/.gitignore)
+target/
+dbt_packages/
+logs/
+dbt_internal_packages/
+dbt.log

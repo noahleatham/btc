@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: test_stg_btc_btc_composite_key
+    description: "Test for composite key uniqueness in stg_btc__btc (hash_key + output_index)."
+  - name: test_stg_btc_transactions_composite_key
+    description: "Test for composite key uniqueness in stg_btc__transactions (hash_key + output_index)."

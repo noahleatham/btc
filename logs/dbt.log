@@ -1,0 +1,947 @@
+[0m14:30:43.360434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d12cc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ec5370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f071d0>]}
+
+
+============================== 14:30:43.364026 | 3e161405-d110-4b9a-a2db-be5f3b935501 ==============================
+[0m14:30:43.364026 [info ] [MainThread]: Running with dbt=1.9.4
+[0m14:30:43.364451 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/noah/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt init', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:30:43.372619 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'PosixPath'.. Dictionary: {'dir': PosixPath('/Users/noah/.dbt')}
+[0m14:30:43.372962 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m14:30:51.948029 [debug] [MainThread]: Starter project path: /Users/noah/Documents/btc/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m14:30:51.954666 [info ] [MainThread]: 
+Your new dbt project "btc" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:30:51.955095 [info ] [MainThread]: Setting up your profile.
+[0m14:32:29.552995 [info ] [MainThread]: Profile btc written to /Users/noah/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:32:29.586553 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 106.295906, "process_in_blocks": "0", "process_kernel_time": 0.211646, "process_mem_max_rss": "125386752", "process_out_blocks": "0", "process_user_time": 0.890385}
+[0m14:32:29.587287 [debug] [MainThread]: Command `dbt init` succeeded at 14:32:29.587214 after 106.30 seconds
+[0m14:32:29.587529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079f1df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f5ae40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b9e240>]}
+[0m14:32:29.587775 [debug] [MainThread]: Flushing usage events
+[0m14:32:30.029116 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:21:36.113121 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 09:21:36.131837 | 39812b78-8325-4636-bcfb-20a43adfa7f2 ==============================
+[0m09:21:36.131837 [info ] [MainThread]: Running with dbt=1.9.4
+[0m09:21:36.132517 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/noah/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:21:36.132930 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/noah/Documents/btc/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:21:36.135272 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.04826004, "process_in_blocks": "0", "process_kernel_time": 0.211665, "process_mem_max_rss": "103923712", "process_out_blocks": "0", "process_user_time": 0.949175}
+[0m09:21:36.135608 [debug] [MainThread]: Command `dbt run` failed at 09:21:36.135556 after 0.05 seconds
+[0m09:21:36.135827 [debug] [MainThread]: Flushing usage events
+[0m09:24:30.850716 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 09:24:30.868566 | 6e5869b4-8fb5-4418-8e1e-089bf4f7f6b7 ==============================
+[0m09:24:30.868566 [info ] [MainThread]: Running with dbt=1.11.2
+[0m09:24:30.869221 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'write_json': 'True', 'use_colors': 'True', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'debug': 'False', 'printer_width': '80', 'static_parser': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'cache_selected_only': 'False', 'invocation_command': 'dbt init test_project', 'log_format': 'default', 'profiles_dir': '/Users/noah/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'log_path': 'logs', 'indirect_selection': 'eager', 'warn_error': 'None', 'log_cache_events': 'False', 'quiet': 'False', 'no_print': 'None'}
+[0m09:24:30.877832 [debug] [MainThread]: Starter project path: /Users/noah/Documents/btc/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m09:24:30.886361 [info ] [MainThread]: 
+Your new dbt project "test_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:24:30.886802 [info ] [MainThread]: Setting up your profile.
+[0m09:24:38.677302 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m09:24:38.677663 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m09:24:38.677838 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m09:26:52.229908 [info ] [MainThread]: Profile test_project written to /Users/noah/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m09:26:52.232770 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 141.41167, "process_in_blocks": "0", "process_kernel_time": 0.176549, "process_mem_max_rss": "131022848", "process_out_blocks": "0", "process_user_time": 0.927218}
+[0m09:26:52.233865 [debug] [MainThread]: Command `dbt init` succeeded at 09:26:52.233743 after 141.41 seconds
+[0m09:26:52.234170 [debug] [MainThread]: Flushing usage events
+[0m09:19:12.025399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10676adb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e42c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e429f0>]}
+
+
+============================== 09:19:12.028540 | e1cc30a3-31c1-4073-b6b1-3ddd3d2795e2 ==============================
+[0m09:19:12.028540 [info ] [MainThread]: Running with dbt=1.11.2
+[0m09:19:12.028879 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'warn_error': 'None', 'log_cache_events': 'False', 'log_format': 'default', 'no_print': 'None', 'indirect_selection': 'eager', 'invocation_command': 'dbt run -s stg_btc__transactions', 'cache_selected_only': 'False', 'quiet': 'False', 'version_check': 'True', 'static_parser': 'True', 'printer_width': '80', 'fail_fast': 'False', 'empty': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/noah/.dbt', 'use_experimental_parser': 'False', 'log_path': 'logs', 'debug': 'False', 'write_json': 'True', 'target_path': 'None', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m09:19:12.029218 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/noah/Documents/btc/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:19:12.031210 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.047668584, "process_in_blocks": "0", "process_kernel_time": 0.125975, "process_mem_max_rss": "108511232", "process_out_blocks": "0", "process_user_time": 0.698694}
+[0m09:19:12.031491 [debug] [MainThread]: Command `dbt run` failed at 09:19:12.031441 after 0.05 seconds
+[0m09:19:12.031671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10676adb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e42b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e42c60>]}
+[0m09:19:12.031838 [debug] [MainThread]: Flushing usage events
+[0m09:19:12.332593 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:48:54.733976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1209aa360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12259ad80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12259a9f0>]}
+
+
+============================== 13:48:54.737716 | f8042f3e-bb04-432d-99e1-0bb96855d4a9 ==============================
+[0m13:48:54.737716 [info ] [MainThread]: Running with dbt=1.11.2
+[0m13:48:54.738085 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'log_cache_events': 'False', 'write_json': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'partial_parse': 'True', 'empty': 'None', 'debug': 'False', 'indirect_selection': 'eager', 'introspect': 'True', 'static_parser': 'True', 'version_check': 'True', 'invocation_command': 'dbt test', 'fail_fast': 'False', 'target_path': 'None', 'profiles_dir': '/Users/noah/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'quiet': 'False', 'log_path': 'logs'}
+[0m13:48:54.738466 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/noah/Documents/btc/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:48:54.741023 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.062048376, "process_in_blocks": "0", "process_kernel_time": 0.167744, "process_mem_max_rss": "108331008", "process_out_blocks": "0", "process_user_time": 0.816018}
+[0m13:48:54.741402 [debug] [MainThread]: Command `dbt test` failed at 13:48:54.741342 after 0.06 seconds
+[0m13:48:54.741640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1221d6840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12252f0b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12229db50>]}
+[0m13:48:54.741858 [debug] [MainThread]: Flushing usage events
+[0m13:48:55.065055 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:06:11.601522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108593ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c02cc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c02a20>]}
+
+
+============================== 08:06:11.604943 | c7698737-f212-4b84-b2f4-3e61f5c12706 ==============================
+[0m08:06:11.604943 [info ] [MainThread]: Running with dbt=1.11.2
+[0m08:06:11.605302 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'empty': 'False', 'introspect': 'True', 'use_colors': 'True', 'log_cache_events': 'False', 'version_check': 'True', 'write_json': 'True', 'profiles_dir': '/Users/noah/.dbt', 'printer_width': '80', 'use_experimental_parser': 'False', 'static_parser': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'cache_selected_only': 'False', 'target_path': 'None', 'debug': 'False', 'invocation_command': 'dbt run'}
+[0m08:06:11.605638 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/noah/Documents/btc/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m08:06:11.638776 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.07907513, "process_in_blocks": "0", "process_kernel_time": 0.150842, "process_mem_max_rss": "108396544", "process_out_blocks": "0", "process_user_time": 0.713995}
+[0m08:06:11.639288 [debug] [MainThread]: Command `dbt run` failed at 08:06:11.639216 after 0.08 seconds
+[0m08:06:11.639564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108593ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c02b70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c02ed0>]}
+[0m08:06:11.639848 [debug] [MainThread]: Flushing usage events
+[0m08:06:12.028247 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:10:09.892349 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e57650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b79b620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b79b2c0>]}
+
+
+============================== 09:10:09.894979 | 48c10326-714c-403a-ade6-8c903ef1634b ==============================
+[0m09:10:09.894979 [info ] [MainThread]: Running with dbt=1.11.2
+[0m09:10:09.895444 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt ', 'introspect': 'True', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'warn_error': 'None', 'log_cache_events': 'False', 'log_path': '/Users/noah/Documents/btc/logs', 'printer_width': '80', 'version_check': 'True', 'use_colors': 'True', 'profiles_dir': '/Users/noah/.dbt', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'log_format': 'default', 'no_print': 'None', 'quiet': 'False', 'write_json': 'True', 'cache_selected_only': 'False', 'empty': 'None', 'target_path': 'None'}
+[0m09:10:09.970788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '48c10326-714c-403a-ade6-8c903ef1634b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b5fd430>]}
+[0m09:10:10.026510 [debug] [MainThread]: Set downloads directory='/var/folders/sh/kx0my8g90653ztsc6cqr2w040000gn/T/dbt-downloads-j8u6_ee3'
+[0m09:10:10.026883 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m09:10:10.321802 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m09:10:10.324105 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_project_evaluator.json
+[0m09:10:10.447714 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_project_evaluator.json 200
+[0m09:10:10.452992 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m09:10:10.571971 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m09:10:10.577630 [info ] [MainThread]: Installing dbt-labs/dbt_project_evaluator
+[0m09:10:11.123764 [info ] [MainThread]: Installed from version 0.10.0
+[0m09:10:11.124136 [info ] [MainThread]: Updated version available: 1.1.2
+[0m09:10:11.124757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '48c10326-714c-403a-ade6-8c903ef1634b', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b849a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b9a6900>]}
+[0m09:10:11.125329 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m09:10:11.526725 [info ] [MainThread]: Installed from version 1.3.3
+[0m09:10:11.527060 [info ] [MainThread]: Up to date!
+[0m09:10:11.527588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '48c10326-714c-403a-ade6-8c903ef1634b', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b9dc230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b9dc260>]}
+[0m09:10:11.527886 [info ] [MainThread]: 
+[0m09:10:11.528112 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_project_evaluator']                 
+Update your versions in packages.yml, then run dbt deps
+[0m09:10:11.532029 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.6853563, "process_in_blocks": "0", "process_kernel_time": 0.303205, "process_mem_max_rss": "117719040", "process_out_blocks": "0", "process_user_time": 1.012761}
+[0m09:10:11.532442 [debug] [MainThread]: Command `cli deps` succeeded at 09:10:11.532376 after 1.69 seconds
+[0m09:10:11.532729 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b5fd430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7c9700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b94d970>]}
+[0m09:10:11.533068 [debug] [MainThread]: Flushing usage events
+[0m09:10:11.901550 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:11:52.816360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c71940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1130a2e40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1130a2ab0>]}
+
+
+============================== 09:11:52.819934 | 287028dc-8c3d-4d46-8588-ac43f496aafe ==============================
+[0m09:11:52.819934 [info ] [MainThread]: Running with dbt=1.11.2
+[0m09:11:52.820301 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'write_json': 'True', 'log_format': 'default', 'warn_error': 'None', 'profiles_dir': '/Users/noah/.dbt', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'log_path': '/Users/noah/Documents/btc/logs', 'partial_parse': 'True', 'use_colors': 'True', 'quiet': 'False', 'cache_selected_only': 'False', 'debug': 'False', 'invocation_command': 'dbt clean', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'introspect': 'True', 'static_parser': 'True', 'no_print': 'None', 'indirect_selection': 'eager', 'empty': 'None', 'log_cache_events': 'False'}
+[0m09:11:52.890436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '287028dc-8c3d-4d46-8588-ac43f496aafe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f01010>]}
+[0m09:11:53.003277 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.22617137, "process_in_blocks": "0", "process_kernel_time": 0.227168, "process_mem_max_rss": "112066560", "process_out_blocks": "0", "process_user_time": 0.778618}
+[0m09:11:53.003582 [debug] [MainThread]: Command `dbt clean` succeeded at 09:11:53.003525 after 0.23 seconds
+[0m09:11:53.003782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112862570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113467aa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1131fb5f0>]}
+[0m09:11:53.003976 [debug] [MainThread]: Flushing usage events
+[0m09:11:53.341832 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:11:57.649751 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107eec860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c172f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c17050>]}
+
+
+============================== 09:11:57.652188 | c1412ddf-4363-407f-a3cf-32b794fc8689 ==============================
+[0m09:11:57.652188 [info ] [MainThread]: Running with dbt=1.11.2
+[0m09:11:57.652509 [debug] [MainThread]: running dbt with arguments {'log_path': '/Users/noah/Documents/btc/logs', 'log_cache_events': 'False', 'printer_width': '80', 'write_json': 'True', 'fail_fast': 'False', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'quiet': 'False', 'indirect_selection': 'eager', 'log_format': 'default', 'invocation_command': 'dbt compile', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'static_parser': 'True', 'target_path': 'None', 'profiles_dir': '/Users/noah/.dbt', 'empty': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'debug': 'False', 'use_colors': 'True', 'version_check': 'True'}
+[0m09:11:57.837720 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m09:11:57.838062 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m09:11:57.838240 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m09:11:57.930505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c1412ddf-4363-407f-a3cf-32b794fc8689', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10978e240>]}
+[0m09:11:57.991561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c1412ddf-4363-407f-a3cf-32b794fc8689', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c13be30>]}
+[0m09:11:57.992566 [info ] [MainThread]: Registered adapter: snowflake=1.11.0
+[0m09:11:58.058313 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found 1 package(s) specified in packages.yml, but only 0 package(s) installed in dbt_packages. Run "dbt deps" to install package dependencies.
+[0m09:11:58.060095 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 0.448772, "process_in_blocks": "0", "process_kernel_time": 0.192158, "process_mem_max_rss": "136658944", "process_out_blocks": "0", "process_user_time": 0.975656}
+[0m09:11:58.060584 [debug] [MainThread]: Command `dbt compile` failed at 09:11:58.060530 after 0.45 seconds
+[0m09:11:58.060878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b97740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c0987a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c10a840>]}
+[0m09:11:58.061160 [debug] [MainThread]: Flushing usage events
+[0m09:11:58.337915 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:12:04.987138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bc6360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ba2f00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ba2c90>]}
+
+
+============================== 09:12:04.989538 | d9fbf88e-d502-48c7-adbb-5cd78cd614f1 ==============================
+[0m09:12:04.989538 [info ] [MainThread]: Running with dbt=1.11.2
+[0m09:12:04.989856 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'empty': 'None', 'log_path': '/Users/noah/Documents/btc/logs', 'write_json': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/noah/.dbt', 'use_colors': 'True', 'printer_width': '80', 'no_print': 'None', 'partial_parse': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'fail_fast': 'False', 'invocation_command': 'dbt deps', 'debug': 'False', 'static_parser': 'True'}
+[0m09:12:05.055312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd9fbf88e-d502-48c7-adbb-5cd78cd614f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bc6330>]}
+[0m09:12:05.067924 [debug] [MainThread]: Set downloads directory='/var/folders/sh/kx0my8g90653ztsc6cqr2w040000gn/T/dbt-downloads-6qv8_1qa'
+[0m09:12:05.068160 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m09:12:05.260606 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m09:12:05.262483 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_project_evaluator.json
+[0m09:12:05.368669 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_project_evaluator.json 200
+[0m09:12:05.373394 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m09:12:05.477730 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m09:12:05.483686 [info ] [MainThread]: Installing dbt-labs/dbt_project_evaluator
+[0m09:12:06.008916 [info ] [MainThread]: Installed from version 0.10.0
+[0m09:12:06.009336 [info ] [MainThread]: Updated version available: 1.1.2
+[0m09:12:06.009587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'd9fbf88e-d502-48c7-adbb-5cd78cd614f1', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105eae810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105eaf830>]}
+[0m09:12:06.009862 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m09:12:06.402969 [info ] [MainThread]: Installed from version 1.3.3
+[0m09:12:06.403358 [info ] [MainThread]: Up to date!
+[0m09:12:06.403680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'd9fbf88e-d502-48c7-adbb-5cd78cd614f1', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e926c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10437b620>]}
+[0m09:12:06.404145 [info ] [MainThread]: 
+[0m09:12:06.404458 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_project_evaluator']                 
+Update your versions in packages.yml, then run dbt deps
+[0m09:12:06.406905 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.4572872, "process_in_blocks": "0", "process_kernel_time": 0.2532, "process_mem_max_rss": "119308288", "process_out_blocks": "0", "process_user_time": 0.952342}
+[0m09:12:06.407352 [debug] [MainThread]: Command `dbt deps` succeeded at 09:12:06.407182 after 1.46 seconds
+[0m09:12:06.407580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104829160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d6a660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b7eab0>]}
+[0m09:12:06.407785 [debug] [MainThread]: Flushing usage events
+[0m09:12:06.680592 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:12:19.328705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d2e960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108abb2c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108abb050>]}
+
+
+============================== 09:12:19.331514 | 4126043d-cb4e-4b10-94e0-0fffdda36d2e ==============================
+[0m09:12:19.331514 [info ] [MainThread]: Running with dbt=1.11.2
+[0m09:12:19.331936 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/noah/.dbt', 'printer_width': '80', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'introspect': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'invocation_command': 'dbt compile', 'write_json': 'True', 'no_print': 'None', 'use_colors': 'True', 'fail_fast': 'False', 'log_path': '/Users/noah/Documents/btc/logs', 'cache_selected_only': 'False', 'partial_parse': 'True', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'False', 'static_parser': 'True', 'target_path': 'None'}
+[0m09:12:19.480740 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m09:12:19.481080 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m09:12:19.481259 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m09:12:19.583914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4126043d-cb4e-4b10-94e0-0fffdda36d2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10953d7f0>]}
+[0m09:12:19.653493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4126043d-cb4e-4b10-94e0-0fffdda36d2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10979bbc0>]}
+[0m09:12:19.654087 [info ] [MainThread]: Registered adapter: snowflake=1.11.0
+[0m09:12:19.747581 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m09:12:19.748253 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m09:12:19.748474 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4126043d-cb4e-4b10-94e0-0fffdda36d2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097c9e80>]}
+[0m09:12:19.797056 [warn ] [MainThread]: [[33mWARNING[0m][CustomKeyInObjectDeprecation]: Deprecated functionality
+Custom key `descritption` found at `models[1]` in file
+`models/marts/dag/dag.yml`. This may mean the key is a typo, or is simply not a
+key supported by the object.
+[0m09:12:19.797418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '4126043d-cb4e-4b10-94e0-0fffdda36d2e', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109951d60>]}
+[0m09:12:21.113569 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `dbt_utils.accepted_range` defined on
+'fct_documentation_coverage' in package 'dbt_project_evaluator'
+(models/marts/documentation/documentation.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+[0m09:12:21.113912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '4126043d-cb4e-4b10-94e0-0fffdda36d2e', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac7afc0>]}
+[0m09:12:21.276570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4126043d-cb4e-4b10-94e0-0fffdda36d2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac7a3f0>]}
+[0m09:12:21.401151 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/noah/Documents/btc/target/manifest.json
+[0m09:12:21.402933 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/noah/Documents/btc/target/semantic_manifest.json
+[0m09:12:21.416487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4126043d-cb4e-4b10-94e0-0fffdda36d2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae93080>]}
+[0m09:12:21.416799 [info ] [MainThread]: Found 51 models, 54 data tests, 2 seeds, 1 source, 1 exposure, 677 macros
+[0m09:12:21.416990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4126043d-cb4e-4b10-94e0-0fffdda36d2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae55100>]}
+[0m09:12:21.419886 [info ] [MainThread]: 
+[0m09:12:21.420099 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:12:21.420247 [info ] [MainThread]: 
+[0m09:12:21.420493 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m09:12:21.424295 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_btc_btc_dev'
+[0m09:12:21.487026 [debug] [ThreadPool]: Using snowflake connection "list_btc_btc_dev"
+[0m09:12:21.487287 [debug] [ThreadPool]: On list_btc_btc_dev: show objects in btc.btc_dev
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "btc", "target_name": "dev", "connection_name": "list_btc_btc_dev"} */;
+[0m09:12:21.487446 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:12:22.580390 [debug] [ThreadPool]: SQL status: SUCCESS 56 in 1.093 seconds
+[0m09:12:22.586969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4126043d-cb4e-4b10-94e0-0fffdda36d2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae59b80>]}
+[0m09:12:22.588814 [debug] [Thread-1 (]: Began running node model.btc.stg_btc__btc
+[0m09:12:22.589067 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_btc_btc_dev, now model.btc.stg_btc__btc)
+[0m09:12:22.589252 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc__btc
+[0m09:12:22.593641 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc__btc"
+[0m09:12:22.594452 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc__btc
+[0m09:12:22.594821 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc__btc
+[0m09:12:22.595020 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.base_exposure_relationships
+[0m09:12:22.595261 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc__btc, now model.dbt_project_evaluator.base_exposure_relationships)
+[0m09:12:22.595523 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.base_exposure_relationships
+[0m09:12:22.598475 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.base_exposure_relationships"
+[0m09:12:22.599214 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.base_exposure_relationships
+[0m09:12:22.599545 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.base_exposure_relationships
+[0m09:12:22.599739 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.base_metric_relationships
+[0m09:12:22.599961 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.base_exposure_relationships, now model.dbt_project_evaluator.base_metric_relationships)
+[0m09:12:22.600193 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.base_metric_relationships
+[0m09:12:22.602369 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.base_metric_relationships"
+[0m09:12:22.602747 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.base_metric_relationships
+[0m09:12:22.603050 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.base_metric_relationships
+[0m09:12:22.603234 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.base_node_columns
+[0m09:12:22.603436 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.base_metric_relationships, now model.dbt_project_evaluator.base_node_columns)
+[0m09:12:22.603635 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.base_node_columns
+[0m09:12:22.607081 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.base_node_columns"
+[0m09:12:22.607491 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.base_node_columns
+[0m09:12:22.607796 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.base_node_columns
+[0m09:12:22.607979 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.base_node_relationships
+[0m09:12:22.608168 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.base_node_columns, now model.dbt_project_evaluator.base_node_relationships)
+[0m09:12:22.608331 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.base_node_relationships
+[0m09:12:22.610487 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.base_node_relationships"
+[0m09:12:22.610865 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.base_node_relationships
+[0m09:12:22.611162 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.base_node_relationships
+[0m09:12:22.611348 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.base_source_columns
+[0m09:12:22.611567 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.base_node_relationships, now model.dbt_project_evaluator.base_source_columns)
+[0m09:12:22.611808 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.base_source_columns
+[0m09:12:22.614503 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.base_source_columns"
+[0m09:12:22.614883 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.base_source_columns
+[0m09:12:22.615185 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.base_source_columns
+[0m09:12:22.615366 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.stg_exposures
+[0m09:12:22.615572 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.base_source_columns, now model.dbt_project_evaluator.stg_exposures)
+[0m09:12:22.615780 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.stg_exposures
+[0m09:12:22.619358 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.stg_exposures"
+[0m09:12:22.619741 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.stg_exposures
+[0m09:12:22.620040 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.stg_exposures
+[0m09:12:22.620220 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.stg_metrics
+[0m09:12:22.620408 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.stg_exposures, now model.dbt_project_evaluator.stg_metrics)
+[0m09:12:22.620570 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.stg_metrics
+[0m09:12:22.624856 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.stg_metrics"
+[0m09:12:22.625225 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.stg_metrics
+[0m09:12:22.625519 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.stg_metrics
+[0m09:12:22.625699 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.stg_naming_convention_folders
+[0m09:12:22.625887 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.stg_metrics, now model.dbt_project_evaluator.stg_naming_convention_folders)
+[0m09:12:22.626050 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.stg_naming_convention_folders
+[0m09:12:22.628675 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.stg_naming_convention_folders"
+[0m09:12:22.629136 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.stg_naming_convention_folders
+[0m09:12:22.629431 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.stg_naming_convention_folders
+[0m09:12:22.629613 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.stg_naming_convention_prefixes
+[0m09:12:22.629797 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.stg_naming_convention_folders, now model.dbt_project_evaluator.stg_naming_convention_prefixes)
+[0m09:12:22.629961 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.stg_naming_convention_prefixes
+[0m09:12:22.633147 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.stg_naming_convention_prefixes"
+[0m09:12:22.633505 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.stg_naming_convention_prefixes
+[0m09:12:22.633794 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.stg_naming_convention_prefixes
+[0m09:12:22.633970 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.stg_nodes
+[0m09:12:22.634168 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.stg_naming_convention_prefixes, now model.dbt_project_evaluator.stg_nodes)
+[0m09:12:22.634357 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.stg_nodes
+[0m09:12:22.640306 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.stg_nodes"
+[0m09:12:22.640707 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.stg_nodes
+[0m09:12:22.641010 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.stg_nodes
+[0m09:12:22.641192 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.stg_sources
+[0m09:12:22.641390 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.stg_nodes, now model.dbt_project_evaluator.stg_sources)
+[0m09:12:22.641593 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.stg_sources
+[0m09:12:22.645535 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.stg_sources"
+[0m09:12:22.645942 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.stg_sources
+[0m09:12:22.646251 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.stg_sources
+[0m09:12:22.646443 [debug] [Thread-1 (]: Began running node seed.btc.btc_usd_max
+[0m09:12:22.646617 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.stg_sources, now seed.btc.btc_usd_max)
+[0m09:12:22.646826 [debug] [Thread-1 (]: Began compiling node seed.btc.btc_usd_max
+[0m09:12:22.648014 [debug] [Thread-1 (]: Began executing node seed.btc.btc_usd_max
+[0m09:12:22.648335 [debug] [Thread-1 (]: Finished running node seed.btc.btc_usd_max
+[0m09:12:22.648522 [debug] [Thread-1 (]: Began running node seed.dbt_project_evaluator.dbt_project_evaluator_exceptions
+[0m09:12:22.648723 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.btc.btc_usd_max, now seed.dbt_project_evaluator.dbt_project_evaluator_exceptions)
+[0m09:12:22.648928 [debug] [Thread-1 (]: Began compiling node seed.dbt_project_evaluator.dbt_project_evaluator_exceptions
+[0m09:12:22.650045 [debug] [Thread-1 (]: Began executing node seed.dbt_project_evaluator.dbt_project_evaluator_exceptions
+[0m09:12:22.650342 [debug] [Thread-1 (]: Finished running node seed.dbt_project_evaluator.dbt_project_evaluator_exceptions
+[0m09:12:22.650519 [debug] [Thread-1 (]: Began running node model.btc.stg_btc__transactions
+[0m09:12:22.650722 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_project_evaluator.dbt_project_evaluator_exceptions, now model.btc.stg_btc__transactions)
+[0m09:12:22.650895 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc__transactions
+[0m09:12:22.652587 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc__transactions"
+[0m09:12:22.653070 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc__transactions
+[0m09:12:22.653262 [debug] [Thread-1 (]: Began running node test.btc.accepted_values_stg_btc__btc_is_coinbase__True__False.94d210eee2
+[0m09:12:22.653473 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc__transactions, now test.btc.accepted_values_stg_btc__btc_is_coinbase__True__False.94d210eee2)
+[0m09:12:22.653716 [debug] [Thread-1 (]: Began compiling node test.btc.accepted_values_stg_btc__btc_is_coinbase__True__False.94d210eee2
+[0m09:12:22.655955 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.accepted_values_stg_btc__btc_is_coinbase__True__False.94d210eee2"
+[0m09:12:22.656422 [debug] [Thread-1 (]: Began executing node test.btc.accepted_values_stg_btc__btc_is_coinbase__True__False.94d210eee2
+[0m09:12:22.656729 [debug] [Thread-1 (]: Finished running node test.btc.accepted_values_stg_btc__btc_is_coinbase__True__False.94d210eee2
+[0m09:12:22.656910 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc__btc_block_hash.251cd19d6e
+[0m09:12:22.657100 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.accepted_values_stg_btc__btc_is_coinbase__True__False.94d210eee2, now test.btc.not_null_stg_btc__btc_block_hash.251cd19d6e)
+[0m09:12:22.657264 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc__btc_block_hash.251cd19d6e
+[0m09:12:22.661732 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc__btc_block_hash.251cd19d6e"
+[0m09:12:22.662123 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc__btc_block_hash.251cd19d6e
+[0m09:12:22.662423 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc__btc_block_hash.251cd19d6e
+[0m09:12:22.662602 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc__btc_block_number.2eb606c4d7
+[0m09:12:22.662792 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc__btc_block_hash.251cd19d6e, now test.btc.not_null_stg_btc__btc_block_number.2eb606c4d7)
+[0m09:12:22.662956 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc__btc_block_number.2eb606c4d7
+[0m09:12:22.665063 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc__btc_block_number.2eb606c4d7"
+[0m09:12:22.665413 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc__btc_block_number.2eb606c4d7
+[0m09:12:22.665708 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc__btc_block_number.2eb606c4d7
+[0m09:12:22.665887 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc__btc_block_timestamp.0846439145
+[0m09:12:22.666073 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc__btc_block_number.2eb606c4d7, now test.btc.not_null_stg_btc__btc_block_timestamp.0846439145)
+[0m09:12:22.666259 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc__btc_block_timestamp.0846439145
+[0m09:12:22.669455 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc__btc_block_timestamp.0846439145"
+[0m09:12:22.669871 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc__btc_block_timestamp.0846439145
+[0m09:12:22.670178 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc__btc_block_timestamp.0846439145
+[0m09:12:22.670363 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc__btc_hash_key.0a8ccd12c9
+[0m09:12:22.670559 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc__btc_block_timestamp.0846439145, now test.btc.not_null_stg_btc__btc_hash_key.0a8ccd12c9)
+[0m09:12:22.670752 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc__btc_hash_key.0a8ccd12c9
+[0m09:12:22.672903 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc__btc_hash_key.0a8ccd12c9"
+[0m09:12:22.673289 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc__btc_hash_key.0a8ccd12c9
+[0m09:12:22.673587 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc__btc_hash_key.0a8ccd12c9
+[0m09:12:22.673770 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc__btc_is_coinbase.307e0edb8b
+[0m09:12:22.673968 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc__btc_hash_key.0a8ccd12c9, now test.btc.not_null_stg_btc__btc_is_coinbase.307e0edb8b)
+[0m09:12:22.674153 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc__btc_is_coinbase.307e0edb8b
+[0m09:12:22.676416 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc__btc_is_coinbase.307e0edb8b"
+[0m09:12:22.676908 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc__btc_is_coinbase.307e0edb8b
+[0m09:12:22.677232 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc__btc_is_coinbase.307e0edb8b
+[0m09:12:22.677415 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc__btc_output_index.294b2b6e59
+[0m09:12:22.677630 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc__btc_is_coinbase.307e0edb8b, now test.btc.not_null_stg_btc__btc_output_index.294b2b6e59)
+[0m09:12:22.677832 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc__btc_output_index.294b2b6e59
+[0m09:12:22.680091 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc__btc_output_index.294b2b6e59"
+[0m09:12:22.680498 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc__btc_output_index.294b2b6e59
+[0m09:12:22.680797 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc__btc_output_index.294b2b6e59
+[0m09:12:22.680987 [debug] [Thread-1 (]: Began running node test.btc.test_stg_btc_btc_composite_key
+[0m09:12:22.681179 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc__btc_output_index.294b2b6e59, now test.btc.test_stg_btc_btc_composite_key)
+[0m09:12:22.681345 [debug] [Thread-1 (]: Began compiling node test.btc.test_stg_btc_btc_composite_key
+[0m09:12:22.682824 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.test_stg_btc_btc_composite_key"
+[0m09:12:22.683309 [debug] [Thread-1 (]: Began executing node test.btc.test_stg_btc_btc_composite_key
+[0m09:12:22.683592 [debug] [Thread-1 (]: Finished running node test.btc.test_stg_btc_btc_composite_key
+[0m09:12:22.683770 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.stg_exposure_relationships
+[0m09:12:22.683951 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.test_stg_btc_btc_composite_key, now model.dbt_project_evaluator.stg_exposure_relationships)
+[0m09:12:22.684112 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.stg_exposure_relationships
+[0m09:12:22.686246 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.stg_exposure_relationships"
+[0m09:12:22.686611 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.stg_exposure_relationships
+[0m09:12:22.686903 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.stg_exposure_relationships
+[0m09:12:22.687088 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.stg_metric_relationships
+[0m09:12:22.687315 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.stg_exposure_relationships, now model.dbt_project_evaluator.stg_metric_relationships)
+[0m09:12:22.687528 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.stg_metric_relationships
+[0m09:12:22.690085 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.stg_metric_relationships"
+[0m09:12:22.690556 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.stg_metric_relationships
+[0m09:12:22.690875 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.stg_metric_relationships
+[0m09:12:22.691063 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.stg_node_relationships
+[0m09:12:22.691279 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.stg_metric_relationships, now model.dbt_project_evaluator.stg_node_relationships)
+[0m09:12:22.691465 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.stg_node_relationships
+[0m09:12:22.693585 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.stg_node_relationships"
+[0m09:12:22.693951 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.stg_node_relationships
+[0m09:12:22.694236 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.stg_node_relationships
+[0m09:12:22.694412 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.stg_columns
+[0m09:12:22.694626 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.stg_node_relationships, now model.dbt_project_evaluator.stg_columns)
+[0m09:12:22.694844 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.stg_columns
+[0m09:12:22.704393 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_project_evaluator.stg_columns"
+[0m09:12:22.704637 [debug] [Thread-1 (]: On model.dbt_project_evaluator.stg_columns: describe table btc.btc_dev.base_node_columns
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "btc", "target_name": "dev", "node_id": "model.dbt_project_evaluator.stg_columns"} */
+[0m09:12:22.882689 [debug] [Thread-1 (]: SQL status: SUCCESS 5 in 0.178 seconds
+[0m09:12:22.885184 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_project_evaluator.stg_columns"
+[0m09:12:22.885443 [debug] [Thread-1 (]: On model.dbt_project_evaluator.stg_columns: describe table btc.btc_dev.base_source_columns
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "btc", "target_name": "dev", "node_id": "model.dbt_project_evaluator.stg_columns"} */
+[0m09:12:23.621514 [debug] [Thread-1 (]: SQL status: SUCCESS 5 in 0.736 seconds
+[0m09:12:23.630683 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.stg_columns"
+[0m09:12:23.631986 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.stg_columns
+[0m09:12:23.632855 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.stg_columns
+[0m09:12:23.633339 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.int_all_graph_resources
+[0m09:12:23.633892 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.stg_columns, now model.dbt_project_evaluator.int_all_graph_resources)
+[0m09:12:23.634425 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.int_all_graph_resources
+[0m09:12:23.646598 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_project_evaluator.int_all_graph_resources"
+[0m09:12:23.647071 [debug] [Thread-1 (]: On model.dbt_project_evaluator.int_all_graph_resources: describe table btc.btc_dev.stg_nodes
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "btc", "target_name": "dev", "node_id": "model.dbt_project_evaluator.int_all_graph_resources"} */
+[0m09:12:23.824289 [debug] [Thread-1 (]: SQL status: SUCCESS 26 in 0.176 seconds
+[0m09:12:23.835656 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_project_evaluator.int_all_graph_resources"
+[0m09:12:23.836388 [debug] [Thread-1 (]: On model.dbt_project_evaluator.int_all_graph_resources: describe table btc.btc_dev.stg_exposures
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "btc", "target_name": "dev", "node_id": "model.dbt_project_evaluator.int_all_graph_resources"} */
+[0m09:12:23.990243 [debug] [Thread-1 (]: SQL status: SUCCESS 12 in 0.153 seconds
+[0m09:12:23.998930 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_project_evaluator.int_all_graph_resources"
+[0m09:12:23.999594 [debug] [Thread-1 (]: On model.dbt_project_evaluator.int_all_graph_resources: describe table btc.btc_dev.stg_metrics
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "btc", "target_name": "dev", "node_id": "model.dbt_project_evaluator.int_all_graph_resources"} */
+[0m09:12:24.117429 [debug] [Thread-1 (]: SQL status: SUCCESS 17 in 0.117 seconds
+[0m09:12:24.127319 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_project_evaluator.int_all_graph_resources"
+[0m09:12:24.127976 [debug] [Thread-1 (]: On model.dbt_project_evaluator.int_all_graph_resources: describe table btc.btc_dev.stg_sources
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "btc", "target_name": "dev", "node_id": "model.dbt_project_evaluator.int_all_graph_resources"} */
+[0m09:12:24.205631 [debug] [Thread-1 (]: SQL status: SUCCESS 17 in 0.077 seconds
+[0m09:12:24.210605 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.int_all_graph_resources"
+[0m09:12:24.211286 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.int_all_graph_resources
+[0m09:12:24.211641 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.int_all_graph_resources
+[0m09:12:24.211838 [debug] [Thread-1 (]: Began running node model.btc.stg_btc_usd_max
+[0m09:12:24.212024 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.int_all_graph_resources, now model.btc.stg_btc_usd_max)
+[0m09:12:24.212196 [debug] [Thread-1 (]: Began compiling node model.btc.stg_btc_usd_max
+[0m09:12:24.213961 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.stg_btc_usd_max"
+[0m09:12:24.214493 [debug] [Thread-1 (]: Began executing node model.btc.stg_btc_usd_max
+[0m09:12:24.214842 [debug] [Thread-1 (]: Finished running node model.btc.stg_btc_usd_max
+[0m09:12:24.215043 [debug] [Thread-1 (]: Began running node test.btc.accepted_values_stg_btc__transactions_is_coinbase__False.c5cd5228ac
+[0m09:12:24.215252 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.stg_btc_usd_max, now test.btc.accepted_values_stg_btc__transactions_is_coinbase__False.c5cd5228ac)
+[0m09:12:24.215451 [debug] [Thread-1 (]: Began compiling node test.btc.accepted_values_stg_btc__transactions_is_coinbase__False.c5cd5228ac
+[0m09:12:24.218832 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.accepted_values_stg_btc__transactions_is_coinbase__False.c5cd5228ac"
+[0m09:12:24.219231 [debug] [Thread-1 (]: Began executing node test.btc.accepted_values_stg_btc__transactions_is_coinbase__False.c5cd5228ac
+[0m09:12:24.219529 [debug] [Thread-1 (]: Finished running node test.btc.accepted_values_stg_btc__transactions_is_coinbase__False.c5cd5228ac
+[0m09:12:24.219711 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc__transactions_block_hash.7c4e31a1bd
+[0m09:12:24.219882 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.accepted_values_stg_btc__transactions_is_coinbase__False.c5cd5228ac, now test.btc.not_null_stg_btc__transactions_block_hash.7c4e31a1bd)
+[0m09:12:24.220043 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc__transactions_block_hash.7c4e31a1bd
+[0m09:12:24.222549 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc__transactions_block_hash.7c4e31a1bd"
+[0m09:12:24.222944 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc__transactions_block_hash.7c4e31a1bd
+[0m09:12:24.223237 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc__transactions_block_hash.7c4e31a1bd
+[0m09:12:24.223408 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc__transactions_block_number.c9b4475f6f
+[0m09:12:24.223589 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc__transactions_block_hash.7c4e31a1bd, now test.btc.not_null_stg_btc__transactions_block_number.c9b4475f6f)
+[0m09:12:24.223744 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc__transactions_block_number.c9b4475f6f
+[0m09:12:24.226090 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc__transactions_block_number.c9b4475f6f"
+[0m09:12:24.226447 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc__transactions_block_number.c9b4475f6f
+[0m09:12:24.226728 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc__transactions_block_number.c9b4475f6f
+[0m09:12:24.226901 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc__transactions_block_timestamp.22ddf92630
+[0m09:12:24.227068 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc__transactions_block_number.c9b4475f6f, now test.btc.not_null_stg_btc__transactions_block_timestamp.22ddf92630)
+[0m09:12:24.227249 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc__transactions_block_timestamp.22ddf92630
+[0m09:12:24.229701 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc__transactions_block_timestamp.22ddf92630"
+[0m09:12:24.230043 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc__transactions_block_timestamp.22ddf92630
+[0m09:12:24.230332 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc__transactions_block_timestamp.22ddf92630
+[0m09:12:24.230506 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc__transactions_hash_key.05289be89d
+[0m09:12:24.230684 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc__transactions_block_timestamp.22ddf92630, now test.btc.not_null_stg_btc__transactions_hash_key.05289be89d)
+[0m09:12:24.230841 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc__transactions_hash_key.05289be89d
+[0m09:12:24.233134 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc__transactions_hash_key.05289be89d"
+[0m09:12:24.233472 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc__transactions_hash_key.05289be89d
+[0m09:12:24.233753 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc__transactions_hash_key.05289be89d
+[0m09:12:24.233923 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc__transactions_is_coinbase.fd12d8000f
+[0m09:12:24.234096 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc__transactions_hash_key.05289be89d, now test.btc.not_null_stg_btc__transactions_is_coinbase.fd12d8000f)
+[0m09:12:24.234253 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc__transactions_is_coinbase.fd12d8000f
+[0m09:12:24.237623 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc__transactions_is_coinbase.fd12d8000f"
+[0m09:12:24.238062 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc__transactions_is_coinbase.fd12d8000f
+[0m09:12:24.238382 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc__transactions_is_coinbase.fd12d8000f
+[0m09:12:24.238569 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc__transactions_output_index.9b486c26f7
+[0m09:12:24.238751 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc__transactions_is_coinbase.fd12d8000f, now test.btc.not_null_stg_btc__transactions_output_index.9b486c26f7)
+[0m09:12:24.238966 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc__transactions_output_index.9b486c26f7
+[0m09:12:24.241486 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc__transactions_output_index.9b486c26f7"
+[0m09:12:24.241889 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc__transactions_output_index.9b486c26f7
+[0m09:12:24.242183 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc__transactions_output_index.9b486c26f7
+[0m09:12:24.242361 [debug] [Thread-1 (]: Began running node test.btc.test_stg_btc_transactions_composite_key
+[0m09:12:24.242559 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc__transactions_output_index.9b486c26f7, now test.btc.test_stg_btc_transactions_composite_key)
+[0m09:12:24.242763 [debug] [Thread-1 (]: Began compiling node test.btc.test_stg_btc_transactions_composite_key
+[0m09:12:24.244875 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.test_stg_btc_transactions_composite_key"
+[0m09:12:24.245239 [debug] [Thread-1 (]: Began executing node test.btc.test_stg_btc_transactions_composite_key
+[0m09:12:24.245604 [debug] [Thread-1 (]: Finished running node test.btc.test_stg_btc_transactions_composite_key
+[0m09:12:24.245785 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_documentation_coverage
+[0m09:12:24.245972 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.test_stg_btc_transactions_composite_key, now model.dbt_project_evaluator.fct_documentation_coverage)
+[0m09:12:24.246133 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_documentation_coverage
+[0m09:12:24.249343 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_documentation_coverage"
+[0m09:12:24.249759 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_documentation_coverage
+[0m09:12:24.250036 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_documentation_coverage
+[0m09:12:24.250209 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_duplicate_sources
+[0m09:12:24.250407 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_documentation_coverage, now model.dbt_project_evaluator.fct_duplicate_sources)
+[0m09:12:24.250617 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_duplicate_sources
+[0m09:12:24.253088 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_duplicate_sources"
+[0m09:12:24.253501 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_duplicate_sources
+[0m09:12:24.253852 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_duplicate_sources
+[0m09:12:24.254029 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_hard_coded_references
+[0m09:12:24.254218 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_duplicate_sources, now model.dbt_project_evaluator.fct_hard_coded_references)
+[0m09:12:24.254401 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_hard_coded_references
+[0m09:12:24.256062 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_hard_coded_references"
+[0m09:12:24.256393 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_hard_coded_references
+[0m09:12:24.256674 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_hard_coded_references
+[0m09:12:24.256850 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_model_naming_conventions
+[0m09:12:24.257042 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_hard_coded_references, now model.dbt_project_evaluator.fct_model_naming_conventions)
+[0m09:12:24.257217 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_model_naming_conventions
+[0m09:12:24.259491 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_model_naming_conventions"
+[0m09:12:24.259873 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_model_naming_conventions
+[0m09:12:24.260148 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_model_naming_conventions
+[0m09:12:24.260321 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_public_models_without_contract
+[0m09:12:24.260497 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_model_naming_conventions, now model.dbt_project_evaluator.fct_public_models_without_contract)
+[0m09:12:24.260674 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_public_models_without_contract
+[0m09:12:24.262417 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_public_models_without_contract"
+[0m09:12:24.262848 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_public_models_without_contract
+[0m09:12:24.263132 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_public_models_without_contract
+[0m09:12:24.263312 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_source_directories
+[0m09:12:24.263505 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_public_models_without_contract, now model.dbt_project_evaluator.fct_source_directories)
+[0m09:12:24.263689 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_source_directories
+[0m09:12:24.265866 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_source_directories"
+[0m09:12:24.266188 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_source_directories
+[0m09:12:24.266462 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_source_directories
+[0m09:12:24.266632 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_undocumented_models
+[0m09:12:24.266815 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_source_directories, now model.dbt_project_evaluator.fct_undocumented_models)
+[0m09:12:24.266984 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_undocumented_models
+[0m09:12:24.269562 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_undocumented_models"
+[0m09:12:24.269887 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_undocumented_models
+[0m09:12:24.270156 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_undocumented_models
+[0m09:12:24.270325 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_undocumented_public_models
+[0m09:12:24.270500 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_undocumented_models, now model.dbt_project_evaluator.fct_undocumented_public_models)
+[0m09:12:24.270670 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_undocumented_public_models
+[0m09:12:24.272278 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_undocumented_public_models"
+[0m09:12:24.272612 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_undocumented_public_models
+[0m09:12:24.272888 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_undocumented_public_models
+[0m09:12:24.273059 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_undocumented_source_tables
+[0m09:12:24.273231 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_undocumented_public_models, now model.dbt_project_evaluator.fct_undocumented_source_tables)
+[0m09:12:24.273401 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_undocumented_source_tables
+[0m09:12:24.275002 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_undocumented_source_tables"
+[0m09:12:24.275345 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_undocumented_source_tables
+[0m09:12:24.275622 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_undocumented_source_tables
+[0m09:12:24.275855 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_undocumented_sources
+[0m09:12:24.276076 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_undocumented_source_tables, now model.dbt_project_evaluator.fct_undocumented_sources)
+[0m09:12:24.276298 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_undocumented_sources
+[0m09:12:24.278170 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_undocumented_sources"
+[0m09:12:24.278553 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_undocumented_sources
+[0m09:12:24.278841 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_undocumented_sources
+[0m09:12:24.279015 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.int_direct_relationships
+[0m09:12:24.279202 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_undocumented_sources, now model.dbt_project_evaluator.int_direct_relationships)
+[0m09:12:24.279375 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.int_direct_relationships
+[0m09:12:24.281737 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.int_direct_relationships"
+[0m09:12:24.282078 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.int_direct_relationships
+[0m09:12:24.282364 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.int_direct_relationships
+[0m09:12:24.282538 [debug] [Thread-1 (]: Began running node model.btc.fct_whale_alert
+[0m09:12:24.282717 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.int_direct_relationships, now model.btc.fct_whale_alert)
+[0m09:12:24.282893 [debug] [Thread-1 (]: Began compiling node model.btc.fct_whale_alert
+[0m09:12:24.288628 [debug] [Thread-1 (]: Writing injected SQL for node "model.btc.fct_whale_alert"
+[0m09:12:24.289124 [debug] [Thread-1 (]: Began executing node model.btc.fct_whale_alert
+[0m09:12:24.289412 [debug] [Thread-1 (]: Finished running node model.btc.fct_whale_alert
+[0m09:12:24.289587 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc_usd_max_market_cap.10025a0c1c
+[0m09:12:24.289783 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.btc.fct_whale_alert, now test.btc.not_null_stg_btc_usd_max_market_cap.10025a0c1c)
+[0m09:12:24.290044 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc_usd_max_market_cap.10025a0c1c
+[0m09:12:24.292096 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc_usd_max_market_cap.10025a0c1c"
+[0m09:12:24.292507 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc_usd_max_market_cap.10025a0c1c
+[0m09:12:24.292789 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc_usd_max_market_cap.10025a0c1c
+[0m09:12:24.292958 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc_usd_max_price.35ef127166
+[0m09:12:24.293131 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc_usd_max_market_cap.10025a0c1c, now test.btc.not_null_stg_btc_usd_max_price.35ef127166)
+[0m09:12:24.293282 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc_usd_max_price.35ef127166
+[0m09:12:24.295402 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc_usd_max_price.35ef127166"
+[0m09:12:24.295822 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc_usd_max_price.35ef127166
+[0m09:12:24.296113 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc_usd_max_price.35ef127166
+[0m09:12:24.296287 [debug] [Thread-1 (]: Began running node test.btc.not_null_stg_btc_usd_max_snapped_at.3fc814bed9
+[0m09:12:24.297464 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc_usd_max_price.35ef127166, now test.btc.not_null_stg_btc_usd_max_snapped_at.3fc814bed9)
+[0m09:12:24.297633 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_stg_btc_usd_max_snapped_at.3fc814bed9
+[0m09:12:24.299578 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_stg_btc_usd_max_snapped_at.3fc814bed9"
+[0m09:12:24.299924 [debug] [Thread-1 (]: Began executing node test.btc.not_null_stg_btc_usd_max_snapped_at.3fc814bed9
+[0m09:12:24.300197 [debug] [Thread-1 (]: Finished running node test.btc.not_null_stg_btc_usd_max_snapped_at.3fc814bed9
+[0m09:12:24.300361 [debug] [Thread-1 (]: Began running node test.btc.unique_stg_btc_usd_max_snapped_at.270bd7568f
+[0m09:12:24.300528 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_stg_btc_usd_max_snapped_at.3fc814bed9, now test.btc.unique_stg_btc_usd_max_snapped_at.270bd7568f)
+[0m09:12:24.300680 [debug] [Thread-1 (]: Began compiling node test.btc.unique_stg_btc_usd_max_snapped_at.270bd7568f
+[0m09:12:24.304046 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.unique_stg_btc_usd_max_snapped_at.270bd7568f"
+[0m09:12:24.304483 [debug] [Thread-1 (]: Began executing node test.btc.unique_stg_btc_usd_max_snapped_at.270bd7568f
+[0m09:12:24.304806 [debug] [Thread-1 (]: Finished running node test.btc.unique_stg_btc_usd_max_snapped_at.270bd7568f
+[0m09:12:24.304993 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.valid_documentation_coverage.67ef7314a7
+[0m09:12:24.305174 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.unique_stg_btc_usd_max_snapped_at.270bd7568f, now test.dbt_project_evaluator.valid_documentation_coverage.67ef7314a7)
+[0m09:12:24.305374 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.valid_documentation_coverage.67ef7314a7
+[0m09:12:24.308235 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.valid_documentation_coverage.67ef7314a7"
+[0m09:12:24.308705 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.valid_documentation_coverage.67ef7314a7
+[0m09:12:24.309007 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.valid_documentation_coverage.67ef7314a7
+[0m09:12:24.309192 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_duplicate_sources_.642214de31
+[0m09:12:24.309381 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.valid_documentation_coverage.67ef7314a7, now test.dbt_project_evaluator.is_empty_fct_duplicate_sources_.642214de31)
+[0m09:12:24.309544 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_duplicate_sources_.642214de31
+[0m09:12:24.311708 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_duplicate_sources_.642214de31"
+[0m09:12:24.312190 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_duplicate_sources_.642214de31
+[0m09:12:24.312500 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_duplicate_sources_.642214de31
+[0m09:12:24.312684 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_hard_coded_references_.9f62f70113
+[0m09:12:24.312875 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_duplicate_sources_.642214de31, now test.dbt_project_evaluator.is_empty_fct_hard_coded_references_.9f62f70113)
+[0m09:12:24.313040 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_hard_coded_references_.9f62f70113
+[0m09:12:24.315224 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_hard_coded_references_.9f62f70113"
+[0m09:12:24.315592 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_hard_coded_references_.9f62f70113
+[0m09:12:24.315887 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_hard_coded_references_.9f62f70113
+[0m09:12:24.316070 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_model_naming_conventions_.a79bc0fbe2
+[0m09:12:24.316254 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_hard_coded_references_.9f62f70113, now test.dbt_project_evaluator.is_empty_fct_model_naming_conventions_.a79bc0fbe2)
+[0m09:12:24.316417 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_model_naming_conventions_.a79bc0fbe2
+[0m09:12:24.318477 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_model_naming_conventions_.a79bc0fbe2"
+[0m09:12:24.318941 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_model_naming_conventions_.a79bc0fbe2
+[0m09:12:24.319231 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_model_naming_conventions_.a79bc0fbe2
+[0m09:12:24.319409 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_public_models_without_contract_.bcf47f1cb0
+[0m09:12:24.319617 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_model_naming_conventions_.a79bc0fbe2, now test.dbt_project_evaluator.is_empty_fct_public_models_without_contract_.bcf47f1cb0)
+[0m09:12:24.319813 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_public_models_without_contract_.bcf47f1cb0
+[0m09:12:24.321929 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_public_models_without_contract_.bcf47f1cb0"
+[0m09:12:24.322390 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_public_models_without_contract_.bcf47f1cb0
+[0m09:12:24.322781 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_public_models_without_contract_.bcf47f1cb0
+[0m09:12:24.322969 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_source_directories_.3ec42bc19c
+[0m09:12:24.323190 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_public_models_without_contract_.bcf47f1cb0, now test.dbt_project_evaluator.is_empty_fct_source_directories_.3ec42bc19c)
+[0m09:12:24.323406 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_source_directories_.3ec42bc19c
+[0m09:12:24.325506 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_source_directories_.3ec42bc19c"
+[0m09:12:24.325883 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_source_directories_.3ec42bc19c
+[0m09:12:24.326184 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_source_directories_.3ec42bc19c
+[0m09:12:24.326363 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_undocumented_models_.7c2f43109c
+[0m09:12:24.326563 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_source_directories_.3ec42bc19c, now test.dbt_project_evaluator.is_empty_fct_undocumented_models_.7c2f43109c)
+[0m09:12:24.326770 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_undocumented_models_.7c2f43109c
+[0m09:12:24.329732 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_undocumented_models_.7c2f43109c"
+[0m09:12:24.330105 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_undocumented_models_.7c2f43109c
+[0m09:12:24.330387 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_undocumented_models_.7c2f43109c
+[0m09:12:24.330560 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_undocumented_public_models_.56938f1938
+[0m09:12:24.330743 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_undocumented_models_.7c2f43109c, now test.dbt_project_evaluator.is_empty_fct_undocumented_public_models_.56938f1938)
+[0m09:12:24.330904 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_undocumented_public_models_.56938f1938
+[0m09:12:24.332860 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_undocumented_public_models_.56938f1938"
+[0m09:12:24.333179 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_undocumented_public_models_.56938f1938
+[0m09:12:24.333454 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_undocumented_public_models_.56938f1938
+[0m09:12:24.333625 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_undocumented_source_tables_.1c89ecc166
+[0m09:12:24.333797 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_undocumented_public_models_.56938f1938, now test.dbt_project_evaluator.is_empty_fct_undocumented_source_tables_.1c89ecc166)
+[0m09:12:24.333954 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_undocumented_source_tables_.1c89ecc166
+[0m09:12:24.335827 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_undocumented_source_tables_.1c89ecc166"
+[0m09:12:24.336192 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_undocumented_source_tables_.1c89ecc166
+[0m09:12:24.336474 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_undocumented_source_tables_.1c89ecc166
+[0m09:12:24.336646 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_undocumented_sources_.0409327235
+[0m09:12:24.336818 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_undocumented_source_tables_.1c89ecc166, now test.dbt_project_evaluator.is_empty_fct_undocumented_sources_.0409327235)
+[0m09:12:24.336974 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_undocumented_sources_.0409327235
+[0m09:12:24.338934 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_undocumented_sources_.0409327235"
+[0m09:12:24.339268 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_undocumented_sources_.0409327235
+[0m09:12:24.339541 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_undocumented_sources_.0409327235
+[0m09:12:24.339717 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_test_directories
+[0m09:12:24.339886 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_undocumented_sources_.0409327235, now model.dbt_project_evaluator.fct_test_directories)
+[0m09:12:24.340041 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_test_directories
+[0m09:12:24.341869 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_test_directories"
+[0m09:12:24.342188 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_test_directories
+[0m09:12:24.342453 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_test_directories
+[0m09:12:24.342620 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.int_all_dag_relationships
+[0m09:12:24.342776 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_test_directories, now model.dbt_project_evaluator.int_all_dag_relationships)
+[0m09:12:24.342936 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.int_all_dag_relationships
+[0m09:12:24.345280 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.int_all_dag_relationships"
+[0m09:12:24.345693 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.int_all_dag_relationships
+[0m09:12:24.345973 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.int_all_dag_relationships
+[0m09:12:24.346144 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.int_model_test_summary
+[0m09:12:24.346337 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.int_all_dag_relationships, now model.dbt_project_evaluator.int_model_test_summary)
+[0m09:12:24.346558 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.int_model_test_summary
+[0m09:12:24.349429 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.int_model_test_summary"
+[0m09:12:24.349902 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.int_model_test_summary
+[0m09:12:24.350188 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.int_model_test_summary
+[0m09:12:24.350362 [debug] [Thread-1 (]: Began running node test.btc.not_null_fct_whale_alert_output_address.e6534247b3
+[0m09:12:24.350539 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.int_model_test_summary, now test.btc.not_null_fct_whale_alert_output_address.e6534247b3)
+[0m09:12:24.350717 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_fct_whale_alert_output_address.e6534247b3
+[0m09:12:24.352782 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_fct_whale_alert_output_address.e6534247b3"
+[0m09:12:24.353157 [debug] [Thread-1 (]: Began executing node test.btc.not_null_fct_whale_alert_output_address.e6534247b3
+[0m09:12:24.353428 [debug] [Thread-1 (]: Finished running node test.btc.not_null_fct_whale_alert_output_address.e6534247b3
+[0m09:12:24.353595 [debug] [Thread-1 (]: Began running node test.btc.not_null_fct_whale_alert_price.6925394612
+[0m09:12:24.353776 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_fct_whale_alert_output_address.e6534247b3, now test.btc.not_null_fct_whale_alert_price.6925394612)
+[0m09:12:24.353948 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_fct_whale_alert_price.6925394612
+[0m09:12:24.356864 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_fct_whale_alert_price.6925394612"
+[0m09:12:24.357212 [debug] [Thread-1 (]: Began executing node test.btc.not_null_fct_whale_alert_price.6925394612
+[0m09:12:24.357492 [debug] [Thread-1 (]: Finished running node test.btc.not_null_fct_whale_alert_price.6925394612
+[0m09:12:24.357665 [debug] [Thread-1 (]: Began running node test.btc.not_null_fct_whale_alert_total_output_value.967af181c5
+[0m09:12:24.357838 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_fct_whale_alert_price.6925394612, now test.btc.not_null_fct_whale_alert_total_output_value.967af181c5)
+[0m09:12:24.357993 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_fct_whale_alert_total_output_value.967af181c5
+[0m09:12:24.359965 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_fct_whale_alert_total_output_value.967af181c5"
+[0m09:12:24.360282 [debug] [Thread-1 (]: Began executing node test.btc.not_null_fct_whale_alert_total_output_value.967af181c5
+[0m09:12:24.360564 [debug] [Thread-1 (]: Finished running node test.btc.not_null_fct_whale_alert_total_output_value.967af181c5
+[0m09:12:24.360738 [debug] [Thread-1 (]: Began running node test.btc.not_null_fct_whale_alert_total_value_usd.c5899256a3
+[0m09:12:24.360907 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_fct_whale_alert_total_output_value.967af181c5, now test.btc.not_null_fct_whale_alert_total_value_usd.c5899256a3)
+[0m09:12:24.361063 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_fct_whale_alert_total_value_usd.c5899256a3
+[0m09:12:24.363053 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_fct_whale_alert_total_value_usd.c5899256a3"
+[0m09:12:24.363360 [debug] [Thread-1 (]: Began executing node test.btc.not_null_fct_whale_alert_total_value_usd.c5899256a3
+[0m09:12:24.363626 [debug] [Thread-1 (]: Finished running node test.btc.not_null_fct_whale_alert_total_value_usd.c5899256a3
+[0m09:12:24.363793 [debug] [Thread-1 (]: Began running node test.btc.not_null_fct_whale_alert_transaction_count.bc6f8bc706
+[0m09:12:24.363961 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_fct_whale_alert_total_value_usd.c5899256a3, now test.btc.not_null_fct_whale_alert_transaction_count.bc6f8bc706)
+[0m09:12:24.364117 [debug] [Thread-1 (]: Began compiling node test.btc.not_null_fct_whale_alert_transaction_count.bc6f8bc706
+[0m09:12:24.366048 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.not_null_fct_whale_alert_transaction_count.bc6f8bc706"
+[0m09:12:24.366374 [debug] [Thread-1 (]: Began executing node test.btc.not_null_fct_whale_alert_transaction_count.bc6f8bc706
+[0m09:12:24.366646 [debug] [Thread-1 (]: Finished running node test.btc.not_null_fct_whale_alert_transaction_count.bc6f8bc706
+[0m09:12:24.366817 [debug] [Thread-1 (]: Began running node test.btc.unique_fct_whale_alert_output_address.cba4eab99b
+[0m09:12:24.366990 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.not_null_fct_whale_alert_transaction_count.bc6f8bc706, now test.btc.unique_fct_whale_alert_output_address.cba4eab99b)
+[0m09:12:24.367148 [debug] [Thread-1 (]: Began compiling node test.btc.unique_fct_whale_alert_output_address.cba4eab99b
+[0m09:12:24.369126 [debug] [Thread-1 (]: Writing injected SQL for node "test.btc.unique_fct_whale_alert_output_address.cba4eab99b"
+[0m09:12:24.369436 [debug] [Thread-1 (]: Began executing node test.btc.unique_fct_whale_alert_output_address.cba4eab99b
+[0m09:12:24.369702 [debug] [Thread-1 (]: Finished running node test.btc.unique_fct_whale_alert_output_address.cba4eab99b
+[0m09:12:24.369870 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_test_directories_.1c1db93433
+[0m09:12:24.370039 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.btc.unique_fct_whale_alert_output_address.cba4eab99b, now test.dbt_project_evaluator.is_empty_fct_test_directories_.1c1db93433)
+[0m09:12:24.370192 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_test_directories_.1c1db93433
+[0m09:12:24.372075 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_test_directories_.1c1db93433"
+[0m09:12:24.372401 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_test_directories_.1c1db93433
+[0m09:12:24.372672 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_test_directories_.1c1db93433
+[0m09:12:24.372846 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_chained_views_dependencies
+[0m09:12:24.373017 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_test_directories_.1c1db93433, now model.dbt_project_evaluator.fct_chained_views_dependencies)
+[0m09:12:24.373177 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_chained_views_dependencies
+[0m09:12:24.375400 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_chained_views_dependencies"
+[0m09:12:24.375788 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_chained_views_dependencies
+[0m09:12:24.376069 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_chained_views_dependencies
+[0m09:12:24.376246 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_direct_join_to_source
+[0m09:12:24.376427 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_chained_views_dependencies, now model.dbt_project_evaluator.fct_direct_join_to_source)
+[0m09:12:24.376615 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_direct_join_to_source
+[0m09:12:24.378355 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_direct_join_to_source"
+[0m09:12:24.378688 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_direct_join_to_source
+[0m09:12:24.378976 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_direct_join_to_source
+[0m09:12:24.379161 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_exposure_parents_materializations
+[0m09:12:24.379344 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_direct_join_to_source, now model.dbt_project_evaluator.fct_exposure_parents_materializations)
+[0m09:12:24.379531 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_exposure_parents_materializations
+[0m09:12:24.381198 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_exposure_parents_materializations"
+[0m09:12:24.381506 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_exposure_parents_materializations
+[0m09:12:24.381772 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_exposure_parents_materializations
+[0m09:12:24.381940 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_exposures_dependent_on_private_models
+[0m09:12:24.382114 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_exposure_parents_materializations, now model.dbt_project_evaluator.fct_exposures_dependent_on_private_models)
+[0m09:12:24.382286 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_exposures_dependent_on_private_models
+[0m09:12:24.384901 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_exposures_dependent_on_private_models"
+[0m09:12:24.385233 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_exposures_dependent_on_private_models
+[0m09:12:24.385520 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_exposures_dependent_on_private_models
+[0m09:12:24.385699 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_marts_or_intermediate_dependent_on_source
+[0m09:12:24.385871 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_exposures_dependent_on_private_models, now model.dbt_project_evaluator.fct_marts_or_intermediate_dependent_on_source)
+[0m09:12:24.386046 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_marts_or_intermediate_dependent_on_source
+[0m09:12:24.387672 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_marts_or_intermediate_dependent_on_source"
+[0m09:12:24.387966 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_marts_or_intermediate_dependent_on_source
+[0m09:12:24.388230 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_marts_or_intermediate_dependent_on_source
+[0m09:12:24.388395 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_model_directories
+[0m09:12:24.388565 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_marts_or_intermediate_dependent_on_source, now model.dbt_project_evaluator.fct_model_directories)
+[0m09:12:24.388731 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_model_directories
+[0m09:12:24.391218 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_model_directories"
+[0m09:12:24.391576 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_model_directories
+[0m09:12:24.391862 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_model_directories
+[0m09:12:24.392037 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_model_fanout
+[0m09:12:24.392207 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_model_directories, now model.dbt_project_evaluator.fct_model_fanout)
+[0m09:12:24.392371 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_model_fanout
+[0m09:12:24.394658 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_model_fanout"
+[0m09:12:24.394974 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_model_fanout
+[0m09:12:24.395243 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_model_fanout
+[0m09:12:24.395410 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_multiple_sources_joined
+[0m09:12:24.395579 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_model_fanout, now model.dbt_project_evaluator.fct_multiple_sources_joined)
+[0m09:12:24.395748 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_multiple_sources_joined
+[0m09:12:24.397881 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_multiple_sources_joined"
+[0m09:12:24.398211 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_multiple_sources_joined
+[0m09:12:24.398481 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_multiple_sources_joined
+[0m09:12:24.398650 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_rejoining_of_upstream_concepts
+[0m09:12:24.398843 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_multiple_sources_joined, now model.dbt_project_evaluator.fct_rejoining_of_upstream_concepts)
+[0m09:12:24.399023 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_rejoining_of_upstream_concepts
+[0m09:12:24.400826 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_rejoining_of_upstream_concepts"
+[0m09:12:24.401157 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_rejoining_of_upstream_concepts
+[0m09:12:24.401432 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_rejoining_of_upstream_concepts
+[0m09:12:24.401602 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_root_models
+[0m09:12:24.401787 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_rejoining_of_upstream_concepts, now model.dbt_project_evaluator.fct_root_models)
+[0m09:12:24.401956 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_root_models
+[0m09:12:24.403568 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_root_models"
+[0m09:12:24.403869 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_root_models
+[0m09:12:24.404135 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_root_models
+[0m09:12:24.404299 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_source_fanout
+[0m09:12:24.404477 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_root_models, now model.dbt_project_evaluator.fct_source_fanout)
+[0m09:12:24.404645 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_source_fanout
+[0m09:12:24.406848 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_source_fanout"
+[0m09:12:24.407178 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_source_fanout
+[0m09:12:24.407447 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_source_fanout
+[0m09:12:24.407617 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_staging_dependent_on_marts_or_intermediate
+[0m09:12:24.407790 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_source_fanout, now model.dbt_project_evaluator.fct_staging_dependent_on_marts_or_intermediate)
+[0m09:12:24.407962 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_staging_dependent_on_marts_or_intermediate
+[0m09:12:24.410528 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_staging_dependent_on_marts_or_intermediate"
+[0m09:12:24.410885 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_staging_dependent_on_marts_or_intermediate
+[0m09:12:24.411158 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_staging_dependent_on_marts_or_intermediate
+[0m09:12:24.411324 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_staging_dependent_on_staging
+[0m09:12:24.411493 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_staging_dependent_on_marts_or_intermediate, now model.dbt_project_evaluator.fct_staging_dependent_on_staging)
+[0m09:12:24.411664 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_staging_dependent_on_staging
+[0m09:12:24.413293 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_staging_dependent_on_staging"
+[0m09:12:24.413609 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_staging_dependent_on_staging
+[0m09:12:24.413888 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_staging_dependent_on_staging
+[0m09:12:24.414056 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_too_many_joins
+[0m09:12:24.414222 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_staging_dependent_on_staging, now model.dbt_project_evaluator.fct_too_many_joins)
+[0m09:12:24.414390 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_too_many_joins
+[0m09:12:24.416157 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_too_many_joins"
+[0m09:12:24.416501 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_too_many_joins
+[0m09:12:24.416774 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_too_many_joins
+[0m09:12:24.416946 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_unused_sources
+[0m09:12:24.417122 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_too_many_joins, now model.dbt_project_evaluator.fct_unused_sources)
+[0m09:12:24.417295 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_unused_sources
+[0m09:12:24.418912 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_unused_sources"
+[0m09:12:24.419220 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_unused_sources
+[0m09:12:24.419482 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_unused_sources
+[0m09:12:24.419648 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_missing_primary_key_tests
+[0m09:12:24.419815 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_unused_sources, now model.dbt_project_evaluator.fct_missing_primary_key_tests)
+[0m09:12:24.419980 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_missing_primary_key_tests
+[0m09:12:24.422080 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_missing_primary_key_tests"
+[0m09:12:24.422416 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_missing_primary_key_tests
+[0m09:12:24.422692 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_missing_primary_key_tests
+[0m09:12:24.422863 [debug] [Thread-1 (]: Began running node model.dbt_project_evaluator.fct_test_coverage
+[0m09:12:24.423033 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_missing_primary_key_tests, now model.dbt_project_evaluator.fct_test_coverage)
+[0m09:12:24.423203 [debug] [Thread-1 (]: Began compiling node model.dbt_project_evaluator.fct_test_coverage
+[0m09:12:24.426305 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project_evaluator.fct_test_coverage"
+[0m09:12:24.426627 [debug] [Thread-1 (]: Began executing node model.dbt_project_evaluator.fct_test_coverage
+[0m09:12:24.426902 [debug] [Thread-1 (]: Finished running node model.dbt_project_evaluator.fct_test_coverage
+[0m09:12:24.427081 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_chained_views_dependencies_.d5cb95fb33
+[0m09:12:24.427259 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project_evaluator.fct_test_coverage, now test.dbt_project_evaluator.is_empty_fct_chained_views_dependencies_.d5cb95fb33)
+[0m09:12:24.427428 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_chained_views_dependencies_.d5cb95fb33
+[0m09:12:24.429498 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_chained_views_dependencies_.d5cb95fb33"
+[0m09:12:24.429900 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_chained_views_dependencies_.d5cb95fb33
+[0m09:12:24.430251 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_chained_views_dependencies_.d5cb95fb33
+[0m09:12:24.430426 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_direct_join_to_source_.2ec67ec028
+[0m09:12:24.430603 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_chained_views_dependencies_.d5cb95fb33, now test.dbt_project_evaluator.is_empty_fct_direct_join_to_source_.2ec67ec028)
+[0m09:12:24.430764 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_direct_join_to_source_.2ec67ec028
+[0m09:12:24.432752 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_direct_join_to_source_.2ec67ec028"
+[0m09:12:24.433099 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_direct_join_to_source_.2ec67ec028
+[0m09:12:24.433373 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_direct_join_to_source_.2ec67ec028
+[0m09:12:24.433543 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_exposure_parents_materializations_.5a21592422
+[0m09:12:24.433720 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_direct_join_to_source_.2ec67ec028, now test.dbt_project_evaluator.is_empty_fct_exposure_parents_materializations_.5a21592422)
+[0m09:12:24.433876 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_exposure_parents_materializations_.5a21592422
+[0m09:12:24.435817 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_exposure_parents_materializations_.5a21592422"
+[0m09:12:24.436143 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_exposure_parents_materializations_.5a21592422
+[0m09:12:24.436415 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_exposure_parents_materializations_.5a21592422
+[0m09:12:24.436581 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_exposures_dependent_on_private_models_.f12ef3521e
+[0m09:12:24.436741 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_exposure_parents_materializations_.5a21592422, now test.dbt_project_evaluator.is_empty_fct_exposures_dependent_on_private_models_.f12ef3521e)
+[0m09:12:24.436915 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_exposures_dependent_on_private_models_.f12ef3521e
+[0m09:12:24.439824 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_exposures_dependent_on_private_models_.f12ef3521e"
+[0m09:12:24.440151 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_exposures_dependent_on_private_models_.f12ef3521e
+[0m09:12:24.440426 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_exposures_dependent_on_private_models_.f12ef3521e
+[0m09:12:24.440597 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_marts_or_intermediate_dependent_on_source_.c0abd5f00f
+[0m09:12:24.440772 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_exposures_dependent_on_private_models_.f12ef3521e, now test.dbt_project_evaluator.is_empty_fct_marts_or_intermediate_dependent_on_source_.c0abd5f00f)
+[0m09:12:24.440929 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_marts_or_intermediate_dependent_on_source_.c0abd5f00f
+[0m09:12:24.442803 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_marts_or_intermediate_dependent_on_source_.c0abd5f00f"
+[0m09:12:24.443131 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_marts_or_intermediate_dependent_on_source_.c0abd5f00f
+[0m09:12:24.443402 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_marts_or_intermediate_dependent_on_source_.c0abd5f00f
+[0m09:12:24.443567 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_model_directories_.50098500db
+[0m09:12:24.443736 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_marts_or_intermediate_dependent_on_source_.c0abd5f00f, now test.dbt_project_evaluator.is_empty_fct_model_directories_.50098500db)
+[0m09:12:24.443890 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_model_directories_.50098500db
+[0m09:12:24.445773 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_model_directories_.50098500db"
+[0m09:12:24.446103 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_model_directories_.50098500db
+[0m09:12:24.446443 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_model_directories_.50098500db
+[0m09:12:24.446612 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_model_fanout_.a3ef403a95
+[0m09:12:24.446782 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_model_directories_.50098500db, now test.dbt_project_evaluator.is_empty_fct_model_fanout_.a3ef403a95)
+[0m09:12:24.446936 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_model_fanout_.a3ef403a95
+[0m09:12:24.448791 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_model_fanout_.a3ef403a95"
+[0m09:12:24.450803 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_model_fanout_.a3ef403a95
+[0m09:12:24.451107 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_model_fanout_.a3ef403a95
+[0m09:12:24.451287 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_multiple_sources_joined_.494f431817
+[0m09:12:24.451481 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_model_fanout_.a3ef403a95, now test.dbt_project_evaluator.is_empty_fct_multiple_sources_joined_.494f431817)
+[0m09:12:24.451655 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_multiple_sources_joined_.494f431817
+[0m09:12:24.453536 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_multiple_sources_joined_.494f431817"
+[0m09:12:24.454848 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_multiple_sources_joined_.494f431817
+[0m09:12:24.455117 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_multiple_sources_joined_.494f431817
+[0m09:12:24.458172 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_rejoining_of_upstream_concepts_.c6b3625c7d
+[0m09:12:24.458355 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_multiple_sources_joined_.494f431817, now test.dbt_project_evaluator.is_empty_fct_rejoining_of_upstream_concepts_.c6b3625c7d)
+[0m09:12:24.458622 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_rejoining_of_upstream_concepts_.c6b3625c7d
+[0m09:12:24.460672 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_rejoining_of_upstream_concepts_.c6b3625c7d"
+[0m09:12:24.462507 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_rejoining_of_upstream_concepts_.c6b3625c7d
+[0m09:12:24.462792 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_rejoining_of_upstream_concepts_.c6b3625c7d
+[0m09:12:24.466220 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_root_models_.ccb5a490f1
+[0m09:12:24.466418 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_rejoining_of_upstream_concepts_.c6b3625c7d, now test.dbt_project_evaluator.is_empty_fct_root_models_.ccb5a490f1)
+[0m09:12:24.466593 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_root_models_.ccb5a490f1
+[0m09:12:24.468753 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_root_models_.ccb5a490f1"
+[0m09:12:24.469120 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_root_models_.ccb5a490f1
+[0m09:12:24.469423 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_root_models_.ccb5a490f1
+[0m09:12:24.469611 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_source_fanout_.45762bb722
+[0m09:12:24.469797 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_root_models_.ccb5a490f1, now test.dbt_project_evaluator.is_empty_fct_source_fanout_.45762bb722)
+[0m09:12:24.469970 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_source_fanout_.45762bb722
+[0m09:12:24.472112 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_source_fanout_.45762bb722"
+[0m09:12:24.472480 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_source_fanout_.45762bb722
+[0m09:12:24.472866 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_source_fanout_.45762bb722
+[0m09:12:24.473064 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_staging_dependent_on_marts_or_intermediate_.3aa45af51f
+[0m09:12:24.473259 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_source_fanout_.45762bb722, now test.dbt_project_evaluator.is_empty_fct_staging_dependent_on_marts_or_intermediate_.3aa45af51f)
+[0m09:12:24.473437 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_staging_dependent_on_marts_or_intermediate_.3aa45af51f
+[0m09:12:24.476593 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_staging_dependent_on_marts_or_intermediate_.3aa45af51f"
+[0m09:12:24.476944 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_staging_dependent_on_marts_or_intermediate_.3aa45af51f
+[0m09:12:24.477234 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_staging_dependent_on_marts_or_intermediate_.3aa45af51f
+[0m09:12:24.477415 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_staging_dependent_on_staging_.bea47be3ca
+[0m09:12:24.477596 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_staging_dependent_on_marts_or_intermediate_.3aa45af51f, now test.dbt_project_evaluator.is_empty_fct_staging_dependent_on_staging_.bea47be3ca)
+[0m09:12:24.477761 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_staging_dependent_on_staging_.bea47be3ca
+[0m09:12:24.479758 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_staging_dependent_on_staging_.bea47be3ca"
+[0m09:12:24.480092 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_staging_dependent_on_staging_.bea47be3ca
+[0m09:12:24.480368 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_staging_dependent_on_staging_.bea47be3ca
+[0m09:12:24.480541 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_too_many_joins_.0cb37fa535
+[0m09:12:24.480713 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_staging_dependent_on_staging_.bea47be3ca, now test.dbt_project_evaluator.is_empty_fct_too_many_joins_.0cb37fa535)
+[0m09:12:24.480873 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_too_many_joins_.0cb37fa535
+[0m09:12:24.482924 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_too_many_joins_.0cb37fa535"
+[0m09:12:24.483284 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_too_many_joins_.0cb37fa535
+[0m09:12:24.483568 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_too_many_joins_.0cb37fa535
+[0m09:12:24.483744 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_unused_sources_.41456b9da8
+[0m09:12:24.483918 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_too_many_joins_.0cb37fa535, now test.dbt_project_evaluator.is_empty_fct_unused_sources_.41456b9da8)
+[0m09:12:24.484077 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_unused_sources_.41456b9da8
+[0m09:12:24.486036 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_unused_sources_.41456b9da8"
+[0m09:12:24.486361 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_unused_sources_.41456b9da8
+[0m09:12:24.486641 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_unused_sources_.41456b9da8
+[0m09:12:24.486816 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.is_empty_fct_missing_primary_key_tests_.4d10d48da0
+[0m09:12:24.487001 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_unused_sources_.41456b9da8, now test.dbt_project_evaluator.is_empty_fct_missing_primary_key_tests_.4d10d48da0)
+[0m09:12:24.487192 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.is_empty_fct_missing_primary_key_tests_.4d10d48da0
+[0m09:12:24.489158 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.is_empty_fct_missing_primary_key_tests_.4d10d48da0"
+[0m09:12:24.489550 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.is_empty_fct_missing_primary_key_tests_.4d10d48da0
+[0m09:12:24.489901 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.is_empty_fct_missing_primary_key_tests_.4d10d48da0
+[0m09:12:24.490078 [debug] [Thread-1 (]: Began running node test.dbt_project_evaluator.valid_test_coverage.df03f31e09
+[0m09:12:24.490254 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_project_evaluator.is_empty_fct_missing_primary_key_tests_.4d10d48da0, now test.dbt_project_evaluator.valid_test_coverage.df03f31e09)
+[0m09:12:24.490411 [debug] [Thread-1 (]: Began compiling node test.dbt_project_evaluator.valid_test_coverage.df03f31e09
+[0m09:12:24.492902 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_project_evaluator.valid_test_coverage.df03f31e09"
+[0m09:12:24.493254 [debug] [Thread-1 (]: Began executing node test.dbt_project_evaluator.valid_test_coverage.df03f31e09
+[0m09:12:24.493521 [debug] [Thread-1 (]: Finished running node test.dbt_project_evaluator.valid_test_coverage.df03f31e09
+[0m09:12:24.493965 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:12:24.494109 [debug] [MainThread]: Connection 'test.dbt_project_evaluator.valid_test_coverage.df03f31e09' was left open.
+[0m09:12:24.494246 [debug] [MainThread]: On test.dbt_project_evaluator.valid_test_coverage.df03f31e09: Close
+[0m09:12:24.638987 [debug] [MainThread]: Command end result
+[0m09:12:24.680499 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/noah/Documents/btc/target/manifest.json
+[0m09:12:24.681915 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/noah/Documents/btc/target/semantic_manifest.json
+[0m09:12:24.688038 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/noah/Documents/btc/target/run_results.json
+[0m09:12:24.688486 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- CustomKeyInObjectDeprecation: 1 occurrence
+- MissingArgumentsPropertyInGenericTestDeprecation: 3 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m09:12:24.690253 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 5.4059763, "process_in_blocks": "0", "process_kernel_time": 0.362901, "process_mem_max_rss": "173129728", "process_out_blocks": "0", "process_user_time": 3.303276}
+[0m09:12:24.690534 [debug] [MainThread]: Command `dbt compile` succeeded at 09:12:24.690482 after 5.41 seconds
+[0m09:12:24.690751 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108abb0e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1a7f80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae5bef0>]}
+[0m09:12:24.690956 [debug] [MainThread]: Flushing usage events
+[0m09:12:24.946906 [debug] [MainThread]: An error was encountered while trying to flush usage events
