@@ -1,0 +1,18 @@
+repos:
+  - repo: https://github.com/sqlfluff/sqlfluff
+    rev: 4.0.0
+    hooks:
+      - id: sqlfluff-lint
+        args: ["--dialect", "snowflake"]
+      - id: sqlfluff-fix
+        args: ["--dialect", "snowflake"]
+  - repo: https://github.com/dbt-checkpoint/dbt-checkpoint
+    rev: v2.0.7
+    hooks:
+      - id: check-model-has-all-columns
+      - id: check-model-columns-have-desc
+      - id: check-model-has-description
+      - id: check-model-has-contract
+      - id: check-model-has-tests
+      - id: check-source-columns-have-desc
+      - id: check-source-table-has-description

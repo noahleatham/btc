@@ -1,16 +1,16 @@
 with renamed as (
-select
-    hash_key,
-    block_hash,
-    block_number,
-    block_timestamp,
-    fee,
-    input_value,
-    output_value,
-    fee_per_byte,
-    is_coinbase,
-    outputs
-from {{ source('raw', 'btc') }}
+    select
+        hash_key,
+        block_hash,
+        block_number,
+        block_timestamp,
+        fee,
+        input_value,
+        output_value,
+        fee_per_byte,
+        is_coinbase,
+        outputs
+    from {{ source('raw', 'btc') }}
 )
 
 select
@@ -31,6 +31,6 @@ select
     f.value:script_hex::string as output_script_hex,
     f.value:type::string as output_type,
     f.value:value::float as output_individual_value
-from renamed r,
-lateral flatten(input => r.outputs) f
+from renamed as r,
+    lateral flatten(input => r.outputs) as f
 where f.value:address is not null

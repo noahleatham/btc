@@ -7,10 +7,10 @@ with source as (
 
 casted as (
     select
-        try_to_timestamp(snapped_at, 'YYYY-MM-DD HH24:MI:SS UTC') as snapped_at,
         price,
         market_cap,
-        total_volume
+        total_volume,
+        try_to_timestamp(snapped_at, 'YYYY-MM-DD HH24:MI:SS UTC') as snapped_at
     from source
 )
 
