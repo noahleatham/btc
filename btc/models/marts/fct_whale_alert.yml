@@ -3,25 +3,43 @@ version: 2
 models:
   - name: fct_whale_alert
     description: Model identifying whale addresses with large transaction outputs and USD valuations
+    config:
+        contract:
+          enforced: true
     columns:
       - name: output_address
         description: Bitcoin address receiving the output
+        data_type: varchar
+        constraints:
+          - type: not_null
         tests:
           - not_null
           - unique
       - name: total_output_value
         description: Sum of all output values for this address in BTC
+        data_type: float
+        constraints:
+          - type: not_null
         tests:
           - not_null
       - name: transaction_count
         description: Number of transactions to this address with outputs > 10 BTC
+        data_type: integer
+        constraints:
+          - type: not_null
         tests:
           - not_null
       - name: price
         description: Current Bitcoin price in USD
+        data_type: float
+        constraints:
+          - type: not_null
         tests:
           - not_null
       - name: total_value_usd
         description: Total output value in USD (total_output_value * price)
+        data_type: float
+        constraints:
+          - type: not_null
         tests:
           - not_null

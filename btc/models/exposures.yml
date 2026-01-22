@@ -1,0 +1,13 @@
+version: 2
+
+exposures:
+  - name: whale_alert_dashboard
+    description: Real-time dashboard tracking large Bitcoin whale transactions and their USD valuations
+    type: dashboard
+    owner:
+      name: Noah Leatham
+      email: n.leatham@das42.com
+    maturity: medium
+    depends_on:
+      - ref('fct_whale_alert')
+    url: https://example.com/dashboards/whale-alert
